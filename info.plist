@@ -23,11 +23,11 @@
 	<key>createdby</key>
 	<string>shmeof</string>
 	<key>description</key>
-	<string>卦辞爻辞</string>
+	<string>周易</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>YiJing</string>
+	<string>ZhouYi</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -40,11 +40,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>乾卦</string>
+				<string>gua</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -56,7 +56,7 @@
 				<key>runningsubtext</key>
 				<string>正在加载中...</string>
 				<key>script</key>
-				<string>python get_64gua.py</string>
+				<string>python get_64gua.py {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -68,7 +68,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -83,7 +83,7 @@
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string></string>
+				<string>{query}</string>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -115,6 +115,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/shmeof/eof_alfred_workflow_zhouyi</string>
 </dict>
 </plist>
